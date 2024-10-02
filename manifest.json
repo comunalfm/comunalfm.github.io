@@ -1,6 +1,6 @@
 {
-  "name": "X WebRadio",
-  "short_name": "X Radio",
+  "name": "Comuna Stereo",
+  "short_name": "Comuna Stereo",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
