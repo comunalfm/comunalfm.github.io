@@ -1,7 +1,7 @@
 const RADIO_NAME = 'Comuna Stereo 92.9 FM';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'https://stream.zeno.fm/geycmwo5vbluv';
+const URL_STREAMING = 'https://stream.zeno.fm/vxyzbg3kscztv';
 
 // You can find the mount point in the Broadcast Settings.
 // To generate the Zeno Radio API link from the mount point,
