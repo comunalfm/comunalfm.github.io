@@ -204,6 +204,8 @@ input, select, textarea {
 
 /* Basic */
 body {
+	background-image: url(../img/cover.webp);
+	width: 100%;
 	background: #000000;	/*  */
 
 }
