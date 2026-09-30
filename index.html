@@ -34,6 +34,17 @@
 		<meta property="og:description" content="Comuna Stereo 92.9 FM - La voz de tu comunidad">
 		<meta content="yes" name="apple-mobile-web-app-capable">
 		<meta name="keywords" content="comunastereo929, comunastereo, comuna, comunafm, comuna929, radio, musica, venezuela, cojedes, emisora, latina, 92.9, 929, romantico, informativa, divertida, integral, musical, latina, top40, fm, crossover, caribe, san carlos, caracas, valencia, maracay, republica, live, apple, blackberry, android, playstore, iphone, salsa, nuevo, retro, merengue, reguetton, varios, 24 horas, en vivo, activa, audio, player, instagram, facebook, youtube, x, tropical, @jesusfcoaponte, @comunastereofm">
+		<script>
+		  if (window.netlifyIdentity) {
+		    window.netlifyIdentity.on("init", user => {
+		      if (!user) {
+		        window.netlifyIdentity.on("login", () => {
+		          document.location.href = "/admin/";
+		        });
+		      }
+		    });
+		  }
+		</script>
 	</head>
 
 	<style>A {text-decoration: none;}</style>
