@@ -10,5 +10,20 @@
   </script>
 </head>
 <body>
+  <!-- 🎛️ ESTA LÍNEA INCLUYE EL COMPONENTE DE INICIO DE SESIÓN VISUAL -->
+  </div>
+
+  <script>
+    // Si el usuario cierra sesión, lo regresa a la pantalla de login
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
