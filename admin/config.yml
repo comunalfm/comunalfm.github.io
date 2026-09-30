@@ -1,0 +1,30 @@
+# Configuración del backend
+backend:
+  name: git-gateway
+  branch: main # Cambia a 'master' si tu repositorio usa esa rama principal
+
+# Ruta donde se guardarán las imágenes que suba el cliente
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+# 🚨 PROTECCIÓN DE ANCHO DE BANDA 🚨
+# Limita el tamaño máximo de las imágenes a 800 KB (aprox. 819200 bytes)
+max_file_size: 819200
+
+# Configuración del panel en español
+locale: 'es'
+
+# Definición de lo que el cliente puede editar (Colecciones)
+collections:
+  - name: "pagina_inicio"
+    label: "Página de Inicio"
+    delete: false # Evita que el cliente borre la configuración por error
+    files:
+      - file: "index.html" # El archivo que va a modificar
+        label: "Contenido de la Radio"
+        name: "inicio"
+        fields:
+          - { label: "Título de la Radio", name: "titulo_sitio", widget: "string" }
+          - { label: "Banner Principal", name: "banner_principal", widget: "image" }
+          - { label: "URL del Streaming de Audio", name: "url_streaming", widget: "string" }
+          - { label: "Texto Quiénes Somos", name: "texto_nosotros", widget: "markdown" }
